@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wiki API</title>
+    <link rel="stylesheet" href="../CSS/search.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../pages/cards.html">Cards</a>
+      <a href="../pages/sort.html">Sorcery</a>
+    </nav>
+
+    <div class="container">
+      <img
+        src="../images/NicePng_gryffindor.png"
+        alt="harry potter logo"
+        class="wiki-logo"
+      />
+
+      <h1><span>Wikipedia</span> Search 🔎</h1>
+
+      <form>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Example : Harry Potter"
+        />
+      </form>
+
+      <img
+        src="../images/wiki-logo.png"
+        alt="logo wikipedia"
+        class="wiki"
+        width="150"
+      />
+
+      <p class="error-msg"></p>
+      <div class="results-display"></div>
+      <div class="loader">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <footer>
+      <p class="footer-text">Harry Potter &copy; 2023</p>
+      <p class="footer-text">Création De Dubois Cédric pour le concours n°3</p>
+    </footer>
+
+    <script src="../JS/search.js"></script>
+  </body>
+</html>

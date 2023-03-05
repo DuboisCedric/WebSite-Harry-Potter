@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+  font-family: "Playfair Display", serif;
+  max-width: 1400px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header-image {
+  height: 90vh;
+  background: url(../images/poudlard.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+}
+
+.header-image img {
+  margin: 20px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+.title img {
+  max-width: calc(30vw + 100px);
+}
+
+/* navigation */
+
+nav {
+  background-color: #222;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+nav a {
+  color: #ec8a09;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: calc(1.4vw + 10px);
+}
+
+nav a:hover {
+  color: #9d5d0a;
+}
+
+.inscription {
+  width: 100%;
+  padding: 60px;
+  height: auto;
+  background: url(../images/train.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80% 20%;
+  text-align: center;
+}
+
+.inscription h2 {
+  color: whitesmoke;
+  font-size: 50px;
+  margin: 30px auto 30px;
+  text-shadow: 0 1px black, 0 2px black, 0 3px black, 0 4px black, 0 5px black,
+    0 6px black, 0 7px black, 0 8px black, 0 9px black, 0 10px black,
+    0 30px 50px black, 0 30px 70px black;
+}
+
+.inscription p {
+  color: whitesmoke;
+  text-shadow: 0 1px black, 0 2px black, 0 3px black, 0 4px black, 0 5px black,
+    0 6px black, 0 7px black, 0 8px black, 0 9px black, 0 10px black,
+    5px 10px 50px black, 5px 20px 60px black;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.inscription button {
+  font-size: 26px;
+  padding: 10px 20px;
+  border: 1px solid whitesmoke;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.inscription button:hover {
+  transform: scale(0.9);
+}
+
+/* section shop */
+
+.titleH1 {
+  color: white;
+  background: linear-gradient(45deg, #ec8a09 50%, #9d5d0a 50%);
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.grille {
+  max-width: 1400px;
+  width: 100%;
+  height: auto;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 40px;
+}
+
+.grid-item {
+  border-radius: 10px;
+  width: 300px;
+  height: 420px;
+  box-shadow: 0 0 3px #777;
+}
+
+.card-image {
+  padding: 10px 10px 0 10px;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+
+.card-image img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-text {
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.card-text h3 {
+  font-size: 24px;
+  color: #ec8a09;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.card-text button {
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(45deg, #ec8a09 50%, #9d5d0a 50%);
+  width: 100%;
+  padding: 8px 40px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px 0 10px 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.card-text button:hover {
+  background: linear-gradient(45deg, #9d5d0a 50%, #ec8a09 50%);
+  transform: scale(0.9);
+}
+
+footer {
+  background: #222;
+  width: 100%;
+  height: 80px;
+}
+
+.footer-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ec8a09;
+  text-align: center;
+  line-height: 40px;
+  font-size: 14px;
+}

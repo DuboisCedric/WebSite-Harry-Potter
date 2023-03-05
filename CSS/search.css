@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: #333;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 3px solid #ec8a09;
+}
+
+nav a {
+  color: #ec8a09;
+  text-decoration: none;
+  margin-right: 30px;
+  font-weight: 600;
+  font-size: calc(1.4vw + 10px);
+}
+
+nav a:hover {
+  color: #9d5d0a;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wiki-logo {
+  background: linear-gradient(45deg, #ec8a09 50%, #9d5d0a 50%);
+  text-align: center;
+  margin-top: 100px;
+  padding: 10px 100px;
+  border-radius: 50px;
+  width: 400px;
+}
+
+h1 {
+  font-size: clamp(20px, 5vw, 50px);
+  color: #333;
+  text-align: center;
+  margin: 20px 0 20px;
+}
+
+p {
+  font-size: clamp(15px, 5vw, 20px);
+  text-align: center;
+}
+
+h1 span {
+  font-weight: 800;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+input {
+  text-align: center;
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.error-msg {
+  text-align: center;
+  color: #454545;
+}
+
+.results-display {
+  max-width: 600px;
+  margin: 70px auto;
+}
+
+.loader {
+  display: none;
+  justify-content: center;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #111;
+  margin: 0 3px;
+  animation: load 0.3s infinite ease-out alternate;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes load {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+.results-item {
+  margin-bottom: 20px;
+}
+
+.result-title {
+  font-size: 22px;
+}
+
+.result-snippet {
+  font-size: 15px;
+  color: #444;
+}
+
+.result-link {
+  color: #006621;
+  font-size: 20px;
+  margin: 20px 0;
+  text-decoration: none;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+hr {
+  margin: 20px 0;
+}
+
+footer {
+  border-top: 3px solid #ec8a09;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 20px 0;
+}
+
+footer p {
+  color: #ec8a09;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 420px) {
+  .wiki-logo {
+    width: 300px;
+  }
+
+  input {
+    width: 60%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
